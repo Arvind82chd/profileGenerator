@@ -22,7 +22,17 @@ const rl = readline.createInterface({
                                         rl.question(`What's your favourite thing to eat for that meal? `, (answer) => {
                                             console.log(`${answer} is quite and tempting choice.`);
                                     
-                                        rl.close();
+                                                rl.question(`Which sport is your absolute favourite?`, (answer) => {
+                                                    console.log(`${answer} is and Amazing sport!!!`);
+                                            
+                                                        rl.question(`What is your superpower? In a few words, tell us what you are amazing at!`, (answer) => {
+                                                            console.log(`That is quite a unique one.`);
+                                                    
+                                                        rl.close();
+                                                        });
+                                                
+                                                });
+
                                         });
 
                                 });
@@ -40,17 +50,7 @@ const rl = readline.createInterface({
 
 
 
-  rl.question(`Which sport is your absolute favourite?`, (answer) => {
-      console.log(`${answer} is and Amazing sport!!!`);
 
-    rl.close();
-  });
-
-  rl.question(`What is your superpower? In a few words, tell us what you are amazing at!`, (answer) => {
-      console.log(`That is quite a unique one.`);
-
-    rl.close();
-  });
 
 
 
